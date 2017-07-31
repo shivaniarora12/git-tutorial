@@ -1,0 +1,14 @@
+<apex:page >
+    <html>
+        <head>
+            <script>
+            ul.addEventListener("click", function(e) {
+                sforce.one.navigateToSObject(e.target.getAttribute("data-id"));
+            });
+            </script>
+        </head>
+        <body>
+               Hello mobile world
+        </body>
+    </html>
+</apex:page>

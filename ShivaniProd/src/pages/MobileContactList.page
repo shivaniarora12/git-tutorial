@@ -1,0 +1,30 @@
+<apex:page standardController="Contact" recordSetVar="contacts">
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <apex:stylesheet value="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.css"/>
+            <apex:stylesheet value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+            <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></apex:includeScript>
+            <apex:includeScript value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></apex:includeScript>
+        </head>
+        <apex:form >
+        <body>
+            
+                <!-- Contacts List -->
+                
+                <apex:repeat var="c" value="{! contacts}">
+                    <ul class="list-group">
+                        <li class="list-group-item">{! c.Name }</li>
+                        
+                        <li class="list-group-item">{! c.FirstName }</li>
+                        <li class="list-group-item">{! c.LastName }</li>
+                        <li class="list-group-item">{! c.Email }</li>
+                        <li class="list-group-item">{! c.Account.Name}</li>
+                    </ul>
+                </apex:repeat> 
+            
+        </body>
+        </apex:form>
+    </html>
+</apex:page>

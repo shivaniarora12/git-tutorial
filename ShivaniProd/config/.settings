@@ -1,0 +1,17 @@
+{
+    "projectName": "ShivaniProd",
+    "username": "shivani.arora@gmail.com",
+    "id": "41dfa8a0-75fa-11e7-865a-d344616ab1a7",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://gocloudy-dev-ed.my.salesforce.com",
+    "workspace": "C:\\Users\\shivaniarora\\Desktop\\ShivaniProjects",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}
